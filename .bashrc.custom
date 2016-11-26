@@ -1,0 +1,46 @@
+export PS1="\[$(tput setaf 2)\][\t][\u@\h \W] \!$\[$(tput sgr0)\] "
+
+count_sessions=`who | cut -f1 -d" " | wc -l`
+if [ ${count_sessions} -ne 2 ]
+then
+	echo "User already selected the environment";
+else
+	PS3='Please select your environment : '
+	options_env=("SnapdealMobileApi" "SnapdealMobileAdmin" "gcm" "Snapdeal" "quit")
+	select opt_env in "${options_env[@]}"
+	do
+		case $opt_env in
+			"SnapdealMobileApi")
+				cd $HOME/Desktop/gitrepo/SnapdealMobileApi;
+				git pull;
+				break
+				;;
+			"SnapdealMobileAdmin")
+				cd $HOME/Desktop/gitrepo/SnapdealMobileAdmin;
+				git pull;
+				break
+				;;
+			"Payment-QE")
+				cd $HOME/Desktop/gitrepo/Payment-QE;
+				git pull;
+				break;
+				;;
+			"gcm")
+				cd $HOME/Desktop/gitrepo/gcm
+				git pull;
+				break
+				;;
+                        "Snapdeal")
+                                cd $HOME/Desktop/gitrepo/Snapdeal
+                                ds gitrepo/Snapdeal pom-mobile.xml
+                                break
+                                ;;
+			"quit")
+				break
+				;;
+			*)
+				echo "Invalid environment provided";;
+		esac
+	done
+fi
+

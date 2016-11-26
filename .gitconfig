@@ -1,0 +1,27 @@
+[user]
+	name = Nilesh Kumar
+	email = nilesh.kumar@snapdeal.com
+[alias]
+	ci = commit
+	st = status
+	df = diff -p
+	dc = diff --cached
+	ds = diff --stat
+	stuno = status -uno
+	co = checkout
+	br = branch
+	lg = log -p
+	lc = log ORIG_HEAD.. --stat --no-merges
+	undo = reset --hard
+	llog = log --date=local
+	changes = diff --name-status -r
+	diffstat = diff --stat -r
+	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+	new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+	stsh = !CURRENT=$(git symbolic-ref HEAD) && git symbolic-ref HEAD refs/heads/stash && git commit -a -m stashed && git checkout CURRENT
+	serve = daemon --reuseaddr --verbose --base-path=. --export-all ./.git
+	prune-all = !git remote | xargs -n 1 git remote prune
+	example = !sh -c 'ls $2 $1' -
+	whois = "!sh -c 'git log -i -l --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+[push]
+	default = simple
