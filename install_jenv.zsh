@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/local/bin/zsh
 
 git clone https://github.com/jenv/jenv.git ~/.jenv
 # Shell: zsh
