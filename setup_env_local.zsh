@@ -13,6 +13,8 @@ chmod +x ./install_*
 ./install_haxor_news.zsh
 ./install_jenv.zsh
 
+cp ./.zshrc ~
 echo '[ -f /Users/nileshkumar/gh/util-scripts/zshrc.aliases ] && source /Users/nileshkumar/gh/util-scripts/zshrc.aliases' >> ~/.zshrc
+
 
 curl wttr.in/Gurgaon
