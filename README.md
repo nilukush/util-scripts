@@ -15,12 +15,12 @@ There is one more, which is [initialize_gradle_web_project.zsh](https://github.c
 * RSocket
 * Lombok
 
-This is how you can use the following script :
+This is how you can use the following script
 ```bash
 initialize_gradle_web_project.zsh <comma separated list of dependencies> <application_name> <artifact_id> <group_id> <name> <package_name>
 ```
 
-Here is an example execution of the script ya :
+Here is an example execution of the script ya
 ```bash
 initialize_gradle_web_project.zsh liquibase MufoDatabaseApplication mufo_database com.mufo mufo_database com.mufo.mufo_database
 ```
