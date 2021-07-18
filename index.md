@@ -15,18 +15,18 @@ There is one more, which is [initialize_gradle_web_project.zsh](https://github.c
 * RSocket
 * Lombok
 
-This is how you can use the following script :
+This is how you can use the following script
 ```bash
 initialize_gradle_web_project.zsh <comma separated list of dependencies> <application_name> <artifact_id> <group_id> <name> <package_name>
 ```
 
-Here is an example execution of the script ya :
+Here is an example execution of the script
 ```bash
 initialize_gradle_web_project.zsh liquibase MufoDatabaseApplication mufo_database com.mufo mufo_database com.mufo.mufo_database
 ```
 
-This helps generate a complete basic structure for a Spring Boot based Gradle Web Project as can be seen in below image :
-![Example Run of Initialializing Gradle Web Project](/images/example_run_of_initialize_gradle_web_project.png)
+This helps generate a complete basic structure for a Spring Boot based Gradle Web Project as can be seen in below image
+![Example Run of Initialializing Gradle Web Project](images/example_run_of_initialize_gradle_web_project.png)
 
 ![Example Run of Initialializing Gradle Web Project 2](/images/example_run_of_initialize_gradle_web_project_2.png)
 
