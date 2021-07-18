@@ -1,3 +1,5 @@
+# Welcome to util-scripts
+
 Welcome to util-scripts. This is home to all the shell scripts that I use in my daily life to make my development and coding process way easier.
 
 ## [setup_env_local.zsh](https://github.com/nilukush/util-scripts/blob/master/setup_env_local.zsh)
