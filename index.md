@@ -26,8 +26,8 @@ initialize_gradle_web_project.zsh liquibase MufoDatabaseApplication mufo_databas
 ```
 
 This helps generate a complete basic structure for a Spring Boot based Gradle Web Project as can be seen in below image
-![Example Run of Initialializing Gradle Web Project](images/example_run_of_initialize_gradle_web_project.png)
-
 ![Example Run of Initialializing Gradle Web Project 2](/images/example_run_of_initialize_gradle_web_project_2.png)
+
+![Example Run of Initialializing Gradle Web Project](images/example_run_of_initialize_gradle_web_project.png)
 
 Do give it a try guys. Thanks for reading through. Cheers !
