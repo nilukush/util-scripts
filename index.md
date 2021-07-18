@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# Welcome to util-scripts
 
-You can use the [editor on GitHub](https://github.com/nilukush/util-scripts/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Welcome to util-scripts. This is home to all the shell scripts that I use in my daily life to make my development and coding process way easier.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## [setup_env_local.zsh](https://github.com/nilukush/util-scripts/blob/master/setup_env_local.zsh)
 
-### Markdown
+One script in particular, which is [setup_env_local.zsh](https://github.com/nilukush/util-scripts/blob/master/setup_env_local.zsh) is quite important and useful because whenever I switch laptops, mainly when I am switching my companies, I need to re-setup everything and hence, I created this neat little script which takes care of setting up my local environment wherever I go. You should try it out if you like it. You just need to run the script to completely setup your local environment.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## [initialize_gradle_web_project.zsh](https://github.com/nilukush/util-scripts/blob/master/initialize_gradle_web_project.zsh)
 
-```markdown
-Syntax highlighted code block
+There is one more, which is [initialize_gradle_web_project.zsh](https://github.com/nilukush/util-scripts/blob/master/initialize_gradle_web_project.zsh) . This is an easy-to-use script to initialize a Gradle Web Project where you can provide all the dependencies and other details that will help you initialize the project. By default, it includes the following dependencies in the project :
 
-# Header 1
-## Header 2
-### Header 3
+* Web
+* MySQL
+* RSocket
+* Lombok
 
-- Bulleted
-- List
+This is how you can use the following script :
+`initialize_gradle_web_project.zsh <comma separated list of dependencies> <application_name> <artifact_id> <group_id> <name> <package_name>`
 
-1. Numbered
-2. List
+Here is an example execution of the script ya :
+`initialize_gradle_web_project.zsh liquibase MufoDatabaseApplication mufo_database com.mufo mufo_database com.mufo.mufo_database`
 
-**Bold** and _Italic_ and `Code` text
+This helps generate a complete basic structure for a Spring Boot based Gradle Web Project as can be seen in below image :
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nilukush/util-scripts/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Do give it a try guys. Thanks for reading through. Cheers !
