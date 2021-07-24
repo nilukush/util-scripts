@@ -12,6 +12,7 @@ chmod +x ./install_*
 ./install_node.zsh
 ./install_haxor_news.zsh
 ./install_jenv.zsh
+./install_buttercup.zsh
 
 cp ./.zshrc ~
 echo '[ -f /Users/nileshkumar/gh/util-scripts/zshrc.aliases ] && source /Users/nileshkumar/gh/util-scripts/zshrc.aliases' >> ~/.zshrc
